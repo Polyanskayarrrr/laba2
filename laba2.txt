@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+    int main()
+    {
+        setlocale(0, "");
+        cout << "Выберете время года:  \n";
+        cout << "\x1b[92m[1]Лето \n";
+        cout << "\x1b[93m[2]Осень \n";
+        cout << "\x1b[94m[3]Зима \n";
+        cout << "\x1b[96m[4]Весна \n \x1b[0m";
+        int season = 0;
+        cout << "Какое сейчас время года? ";
+        cin >> season;
+        if (season == 1) {
+            cout << "Ура летооо!!!!!!";
+        }
+        else if (season == 2) {
+            cout << "Пора в школу(((((";
+        }
+        else if (season == 3) {
+            cout << "Скоро новый год!!!";
+        }
+        else if (season == 4) {
+            cout << "Фуу слякоть, но скоро лето";
+        }
+        else
+            cout << "Такого времени года нет!!!";
+       
+        int _;
+        cin >> _;
+        return 0;
+    
+}
